@@ -92,8 +92,8 @@
     "postcss-loader": "^0.8.0"
   },
   "dependencies": {
-    "mathjs": "^2.5.0",
     "classnames": "^2.1.5",
+    "mathjs": "^2.5.0",
     "react": "^0.14.0",
     "react-dom": "^0.14.0"
   }

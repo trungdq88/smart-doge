@@ -79,7 +79,7 @@ export default class App extends React.Component {
               <h3>f({this.state.numbers.trim().split(' ').length + 1}) = {this.state.answer}</h3>
             </div>
           </div>
-          <img width="300" src="/assets/wow-crop.jpg"/>
+          <img width="300" src="assets/wow-crop.jpg"/>
         </div>
       );
     } else {
@@ -89,6 +89,11 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
+        <div id="source">
+          <a href="https://github.com/trungdq88/smart-doge">
+            https://github.com/trungdq88/smart-doge
+          </a>
+        </div>
         <p>Enter your number sequence (Example: "1 2 3 4")</p>
         <p>
           <input

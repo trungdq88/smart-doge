@@ -2,6 +2,5 @@
 .idea
 *.iml
 node_modules
-build
 bower_components
 coverage

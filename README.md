@@ -1,7 +1,7 @@
-[![Build status](https://travis-ci.org/trungdq88/next-number.svg?branch=master)](https://travis-ci.org/trungdq88/next-number)
-[![Dependencies](https://img.shields.io/david/trungdq88/next-number.svg)]()
-[![Dev dependencies](https://img.shields.io/david/dev/trungdq88/next-number.svg)]()
-[![Coverage Status](https://coveralls.io/repos/trungdq88/next-number/badge.svg?branch=master&service=github)](https://coveralls.io/github/trungdq88/next-number?branch=master)
+[![Build status](https://travis-ci.org/trungdq88/smart-doge.svg?branch=master)](https://travis-ci.org/trungdq88/smart-doge)
+[![Dependencies](https://img.shields.io/david/trungdq88/smart-doge.svg)]()
+[![Dev dependencies](https://img.shields.io/david/dev/trungdq88/smart-doge.svg)]()
+[![Coverage Status](https://coveralls.io/repos/trungdq88/smart-doge/badge.svg?branch=master&service=github)](https://coveralls.io/github/trungdq88/smart-doge?branch=master)
 
 
 # About

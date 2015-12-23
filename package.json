@@ -1,7 +1,7 @@
 {
-  "name": "next-number",
+  "name": "smart-doge",
   "version": "0.0.0",
-  "description": "Find next number in a sequence",
+  "description": "Doge can find the next number in a sequence. Yay!",
   "main": "src/app.jsx",
   "scripts": {
     "staging": "NODE_ENV=staging npm run webpack",

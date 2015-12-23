@@ -5,13 +5,13 @@ import calc from '../calc.js';
 
 describe('App', () => {
   it('gauss_2 should return fraction numbers', () => {
-      const result = calc([1.5, 2, 3, 4, 5], gauss_2);
-      expect(result.result.valueOf()).to.equal(6.5);
-      expect(result.result.n).to.equal(13);
-      expect(result.result.d).to.equal(2);
-      expect(result.result.s).to.equal(1);
-      expect(result.params[0].n).to.equal(1);
-      expect(result.params[0].d).to.equal(48);
+    const result = calc([1.5, 2, 3, 4, 5], gauss_2);
+    expect(result.result.valueOf()).to.equal(6.5);
+    expect(result.result.n).to.equal(13);
+    expect(result.result.d).to.equal(2);
+    expect(result.result.s).to.equal(1);
+    expect(result.params[0].n).to.equal(1);
+    expect(result.params[0].d).to.equal(48);
   });
 
   it('gauss_2 should works', () => {

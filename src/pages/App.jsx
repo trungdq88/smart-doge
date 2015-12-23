@@ -30,10 +30,10 @@ export default class App extends React.Component {
   buildFuncString(params) {
     let func = 'f(x) = ';
 
-    for (var i = 0; i < params.length; i++) {
-      let positive = params[i].s === 1;
+    for (let i = 0; i < params.length; i++) {
+      const positive = params[i].s === 1;
+      const pow = params.length - 1 - i;
       let val = this.getValue(params[i]);
-      let pow = params.length - 1 -i;
       const operator = positive ? '+' : '';
 
 
@@ -82,9 +82,8 @@ export default class App extends React.Component {
           <img width="300" src="assets/wow-crop.jpg"/>
         </div>
       );
-    } else {
-      return '';
     }
+    return '';
   }
   render() {
     return (

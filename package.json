@@ -19,20 +19,20 @@
     "webpack": "webpack --colors --progress --config ./webpack/config"
   },
   "repository": {
-    "type": "git+git@github.com:siliconstraits/next-number.git",
-    "url": "https://github.com/siliconstraits/next-number"
+    "type": "git+git@github.com:trungdq88/next-number.git",
+    "url": "https://github.com/trungdq88/next-number"
   },
   "author": "SSS",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/siliconstraits/next-number/issues"
+    "url": "https://github.com/trungdq88/next-number/issues"
   },
   "config": {
     "buildDir": "./build",
     "devHost": "localhost",
     "devPort": 8763
   },
-  "homepage": "https://github.com/siliconstraits/next-number",
+  "homepage": "https://github.com/trungdq88/next-number",
   "babel": {
     "presets": [
       "es2015",

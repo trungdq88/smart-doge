@@ -1,5 +1,7 @@
 import React from 'react';
 import gauss_2 from '../third-party/gauss_2.js';
+import '../wow-crop.jpg';
+import '../style/main.less';
 import calc from './calc.js';
 
 export default class App extends React.Component {
@@ -15,6 +17,8 @@ export default class App extends React.Component {
   onNumberChange(e) {
     this.setState({
       numbers: e.target.value,
+      answer: '',
+      func: '',
     });
   }
 
@@ -49,7 +53,7 @@ export default class App extends React.Component {
     return func;
   }
   find() {
-    const result = calc(this.state.numbers.split(' ').map(n => +n), gauss_2);
+    const result = calc(this.state.numbers.trim().split(' ').map(n => +n), gauss_2);
     const number = this.getValue(result.result);
 
     this.setState({
@@ -66,18 +70,16 @@ export default class App extends React.Component {
             The next number is {this.state.answer}
           </h1>
           <h3>Why?</h3>
-          <p>
-            Let <b>{this.state.func}</b>
-            <br/>
-            Then:
-            <br/>
+          <div>
+            <h4>Let <b>{this.state.func}, then:</b></h4>
             <div>
-              {this.state.numbers.split(' ').map((number, i) => {
-                return <p key={i}>f({i + 1}) = {number}</p>;
+              {this.state.numbers.trim().split(' ').map((number, i) => {
+                return <h4 key={i}>f({i + 1}) = {number}</h4>;
               })}
-              <b>f({this.state.numbers.split(' ').length + 1}) = {this.state.answer}</b>
+              <h3>f({this.state.numbers.trim().split(' ').length + 1}) = {this.state.answer}</h3>
             </div>
-          </p>
+          </div>
+          <img width="300" src="/assets/wow-crop.jpg"/>
         </div>
       );
     } else {

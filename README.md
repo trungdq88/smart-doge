@@ -1,11 +1,14 @@
-[![Build status](https://travis-ci.org/trungdq88/plain-react.svg?branch=master)](https://travis-ci.org/siliconstraits/react-admin)
-[![Dependencies](https://img.shields.io/david/trungdq88/plain-react.svg)]()
-[![Dev dependencies](https://img.shields.io/david/dev/trungdq88/plain-react.svg)]()
-[![Coverage Status](https://coveralls.io/repos/trungdq88/plain-react/badge.svg?branch=master&service=github)](https://coveralls.io/github/trungdq88/plain-react?branch=master)
+[![Build status](https://travis-ci.org/trungdq88/next-number.svg?branch=master)](https://travis-ci.org/siliconstraits/react-admin)
+[![Dependencies](https://img.shields.io/david/trungdq88/next-number.svg)]()
+[![Dev dependencies](https://img.shields.io/david/dev/trungdq88/next-number.svg)]()
+[![Coverage Status](https://coveralls.io/repos/trungdq88/next-number/badge.svg?branch=master&service=github)](https://coveralls.io/github/trungdq88/next-number?branch=master)
 
 
 # About
-My favorite boilerplate to create static web app with React.
+Inspired from this 9GAG post:
+<img src="wow.jpg" />
+
+This app simply calculating the next number with "clear" explanation why it should be the next number. Yeah.
 
 # Initial dev setup
 Make sure you have NodeJS v4.1.1 or above. 
@@ -15,7 +18,7 @@ npm install
 npm start 
 ``` 
 
-`http://localhost:8123` should now be live with Hot Module Replacement.
+`http://localhost:8763` should now be live with Hot Module Replacement.
 
 # Production build
 

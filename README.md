@@ -6,6 +6,7 @@
 
 # About
 Inspired from this 9GAG post:
+
 <img src="wow.jpg" />
 
 This app simply calculating the next number with "clear" explanation why it should be the next number. Yeah.

@@ -1,5 +1,6 @@
 import React from 'react';
 import gauss from '../third-party/gauss.js';
+import calc from './calc.js';
 
 export default class App extends React.Component {
   constructor(...args) {
@@ -16,25 +17,7 @@ export default class App extends React.Component {
   }
 
   find() {
-    const numbers = this.state.numbers.split(' ').map(n => +n);
-    const matrix = [];
-    for (let i = 0; i < numbers.length; i++) {
-      const row = [];
-      for (let j = 0; j < numbers.length; j++) {
-        row.push(Math.pow(i + 1, numbers.length - j - 1));
-      }
-      row.push(numbers[i]);
-      matrix.push(row);
-    }
-
-    const params = gauss(matrix);
-    let result = 0;
-    const nextIndex = numbers.length + 1;
-    for (let i = 0; i < numbers.length; i++) {
-      result += params[i] * Math.pow(nextIndex, numbers.length - i - 1);
-    }
-    console.log(params);
-    console.log(result);
+    console.log(calc(this.state.numbers.split(' ').map(n => +n), gauss));
   }
 
   render() {

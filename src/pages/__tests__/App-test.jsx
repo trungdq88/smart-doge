@@ -33,4 +33,13 @@ describe('App', () => {
       expect(result1).to.equal(result2);
     }
   });
+
+  it('Doge should be smart, returns f(x) = x^2 instead of others', () => {
+    const result = calc([1, 4, 9, 16], gauss_2);
+    expect(result.result.valueOf()).to.equal(25);
+  });
+  it('Doge should be smarter, returns f(x) = x^3 instead of others', () => {
+    const result = calc([1, 8, 27, 64], gauss_2);
+    expect(result.result.valueOf()).to.equal(125);
+  });
 });

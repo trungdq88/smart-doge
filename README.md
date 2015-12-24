@@ -11,6 +11,18 @@ Inspired from this 9GAG post:
 
 This app simply calculating the next number with "clear" explanation why it should be the next number. Yeah.
 
+# How does it work?
+
+Simple, we can always find a `f(x)` function that match every number in the given sequence by solving a linear equations:
+(with `n` is the number of the number in the sequence)
+
+    f(x) = x^n + x^(n-1) + x^(n-2) + ... + x + 1
+
+When we found `f(x)`, we can easily calculate the next number in the sequence. Wow, much solution!
+
+This app uses Gaussian elimination algorithm found here http://martin-thoma.com/solving-linear-equations-with-gaussian-elimination/
+with a small modification to make it work with fraction numbers using `mathjs` library.
+
 # Initial dev setup
 Make sure you have NodeJS v4.1.1 or above. 
 

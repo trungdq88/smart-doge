@@ -63,7 +63,7 @@ export default class App extends React.Component {
   }
 
   renderDescription() {
-    if (this.state.answer) {
+    if (this.state.answer !== undefined) {
       return (
         <div>
           <h1>

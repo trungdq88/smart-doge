@@ -33,10 +33,12 @@ function gauss(A) {
                     A[k][j] = 0;
                 } else {
                     A[k][j] = math.add(
-                      A[k][j],
-                      math.multiply(
-                        math.fraction(c), 
-                        math.fraction(A[i][j])
+                      math.fraction(A[k][j]),
+                      math.fraction(
+                        math.multiply(
+                          math.fraction(c), 
+                          math.fraction(A[i][j])
+                        )
                       )
                     );
                 }

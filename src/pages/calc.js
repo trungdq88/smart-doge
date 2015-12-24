@@ -8,8 +8,10 @@ function calcResult(params) {
      math.fraction(result),
      math.fraction(
        math.multiply(
-         params[i],
-         math.pow(nextIndex, params.length - i - 1)
+         math.fraction(params[i]),
+         math.fraction(
+           math.pow(nextIndex, params.length - i - 1)
+         )
        )
      )
     );
